@@ -15,23 +15,6 @@ if find_letter == 'y':
 	smallest = abs(letter_index - 25) if abs(letter_index - 25) < 26 else 0
 	largest = abs(25 - letter_index) if 0 < abs(25 - letter_index) else 0
 	maximum = max([int(smallest),int(largest)])
-# Letter Distance Calculator by zzatkin
-import sys
-
-letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-first_letter_index = second_letter_index = 0
-
-find_letter = raw_input('Find a letter a certain distance from a specified letter? [y/n] ')
-
-if find_letter == 'y':
-	letter = raw_input('Enter the letter [a-z]: ')
-	try:
-		letter_index = letters.index(letter)
-	except:
-		quit('Letter not found')
-	smallest = abs(letter_index - 25) if abs(letter_index - 25) < 26 else 0
-	largest = abs(25 - letter_index) if 0 < abs(25 - letter_index) else 0
-	maximum = max([int(smallest),int(largest)])
 	distance = raw_input('How far away? [max: '+str(maximum)+']: ')
 	try:
 		distance = int(distance)
