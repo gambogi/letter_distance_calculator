@@ -20,9 +20,9 @@ if find_letter == 'y':
 		distance = int(distance)
 	except:
 		quit('Invalid distance')
-	if 0 < distance and distance <= maximum:
+	if 0 < distance:
 		left = letter_index - distance if -1 < letter_index - distance else 0
-		right = letter_index + distance if letter_index - distance < 26 else 25
+		right = letter_index + distance if letter_index + distance < 26 else 25
 		print ''.join(letters)
 		for i in range(0,26):
 			if i == left or i == right:
